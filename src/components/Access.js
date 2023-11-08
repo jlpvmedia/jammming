@@ -31,6 +31,7 @@ function Access(props) {
     }, []);
 
     function logout() {
+      const saveToken = props.saveToken;
       saveToken('');
       window.localStorage.removeItem('token');  
     };
