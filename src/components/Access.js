@@ -15,7 +15,6 @@ function Access(props) {
 
     useEffect( () => {
         const hash = window.location.hash;
-        const saveToken = props.saveToken;
         let token = window.localStorage.getItem("token");
 
         if (!token && hash){
@@ -27,12 +26,11 @@ function Access(props) {
             window.location.hash = "";
         }
         //Adds token to the state
-        saveToken(token);
-    }, []);
+        props.saveToken(token);
+    }, );
 
     function logout() {
-      const saveToken = props.saveToken;
-      saveToken('');
+      props.saveToken('');
       window.localStorage.removeItem('token');  
     };
 
