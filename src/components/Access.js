@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect} from 'react';
 
 function Access(props) {
     const CLIENT_ID = '08da5d9c4c2d480aaaddaa94fa0115cf';
