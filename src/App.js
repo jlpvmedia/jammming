@@ -82,7 +82,7 @@ function App() {
               })
               .then(response => response.json())
               .then(data => {
-                console.log('Music added!');
+                console.log('Music added!', data);
               })
               .catch(error => {
                 console.error('Error sending musics', error);

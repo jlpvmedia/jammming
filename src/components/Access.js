@@ -11,10 +11,10 @@ function Access(props) {
     /*const access_link = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`*/
 
     let token = props.token;
-    const saveToken = props.saveToken;
 
     useEffect( () => {
         const hash = window.location.hash;
+        const saveToken = props.saveToken;
         let token = window.localStorage.getItem("token");
 
         if (!token && hash){

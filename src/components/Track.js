@@ -5,7 +5,6 @@ function Track(props) {
     const type = props.type;
     const addSong = props.addSong;
     const removeSong = props.removeSong;
-    const myPlaylist = props.myPlaylist;
 
     const [showButton, setShowButton] = useState(true);
 
