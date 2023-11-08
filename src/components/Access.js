@@ -3,7 +3,7 @@ import '../App.css';
 
 function Access(props) {
     const CLIENT_ID = '08da5d9c4c2d480aaaddaa94fa0115cf';
-    const REDIRECT_URI = 'http://localhost:3000';
+    const REDIRECT_URI = 'https://musical-paprenjak-9e308f.netlify.app/'; //Staging URL
     const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
     const RESPONSE_TYPE = 'token';
     const SCOPE = 'playlist-modify-public playlist-modify-private'; // Add other scopes here as needed, separated by spaces
