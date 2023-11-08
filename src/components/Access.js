@@ -1,4 +1,5 @@
 import React, { useEffect} from 'react';
+import '../App.css';
 
 function Access(props) {
     const CLIENT_ID = '08da5d9c4c2d480aaaddaa94fa0115cf';
